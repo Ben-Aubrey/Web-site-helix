@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head'); %>
+    <!-- Css -->
+    <link rel="stylesheet" href="/stylesheets/about.css">
+</head>
+<body>
+  <!-- Header -->
+  <header id="header">
+    <%- include('partials/header', {variant: 'compact'}); %>
+  </header>
+  <!-- Header -->
+
+  <!-- We are  -->
+  <section id="we">
+    <div class="container">
+      <div class="row p-2">
+        <h1 class="p-1 mt-5">About Helix</h1>
+        <div class="col-md-6 text-center">
+          <div class="hImage text-center">
+            <img src="images/pexels-andrea-piacquadio-3755760.jpg" alt="" class="img" height="350px">
+          </div>
+        </div>
+        <div class="col-md-6 text-center">
+          <div class="h p-5 ">
+            <h2 class="mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h2>
+            <p class="p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis explicabo veniam labore ratione illo vero voluptate a deserunt incidunt odio aliquam commodi blanditiis voluptas error non rerum temporibus optio accusantium!</p>
+            <p>Quis explicabo veniam labore ratione illo vero voluptate a deserunt incidunt odio aliquam commodi blanditiis voluptas error non rerum temporibus optio accusantium!</p>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </section>
+  <!-- We are  -->
+  
+  <!-- Teachers -->
+  <section id="teachers">
+    <div class="container">
+      <div class="row teach text-center p-5">
+        <h3 class="h3 p-1">Meet Our Qualified <br> Teachers</h3>
+        <p class="p-1 p">Sed a repudiandae impedit voluptate nam Deleniti dignissimos perspiciatis nostrum porro nesciunt</p>
+        <div class="col">
+          <div class="card mt-4" style="width: 18rem;">
+            <img src="images/pexels-eminumana-3978518 (2).jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Chris Pauls</h3>
+              <h5>Physical Education</h5>
+              <p class="card-text p">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+              <i class="fa-solid fa-user"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mt-4" style="width: 18rem;">
+            <img src="images/pexels-eminumana-3978518 (2).jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Janet Morris</h3>
+              <h5>Physics Teacher</h5>
+              <p class="card-text p">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              <i class="fa-solid fa-user"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mt-4" style="width: 18rem;">
+            <img src="images/pexels-eminumana-3978518 (2).jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Linda Reyez</h3>
+              <h5>Mathematics</h5>
+              <p class="card-text p">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+              <i class="fa-solid fa-user"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Teachers -->
+
+  <!-- CTA -->
+  <section id="cta">
+    <div class="container-fluid mt-5">
+      <div class="row text-center p-3 mt-5">
+        <div class="col-md-12">
+          <h2 class="" data-animate-effect="fadeInRight">Get your admission now!</h2>
+          <a href="#" role="button" class="btn btn-light border-1 btn-lg" data-animate-effect="fadeInLeft">Enroll</a>
+        </div>
+      </div>
+    </div>
+  </section>  
+  <!-- CTA -->
+
+  <footer>
+    <%- include('partials/footer'); %>
+  </footer>
+<%- include('../../public/js/script'); %>
+</body>
+</html>

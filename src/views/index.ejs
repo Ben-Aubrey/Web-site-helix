@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('partials/head'); %>
+  <!-- Css -->
+  <link rel="stylesheet" href="/stylesheets/index.css">
+</head>
+<body>
+  <!-- Header -->
+  <Header id="header">
+    <%- include('partials/header'); %>
+    <!-- Introduction -->
+    <div class="intro p-3">
+      <h3 class="display-1">Welcome to Helix <br> International</h3>
+        <p class="lead">We are West Africa's largest school. We love what we do, and you will too.</p>
+        <button type="button" class="col-sm-12 but btn btn-light border-1 btn-lg"> Learn more</button>
+    </div>
+    <!-- Introduction -->
+  </Header>
+  <!-- Header -->
+  
+  <!-- Our Work -->
+  <section id="our-work">
+    <div class="container p">
+     <div class="row p-5 align-items-start justify-content-end">
+       <% if(typeof data !== 'undefined') { %>
+        <% data.forEach(ww => { %>
+        <div class="col-sm-12 col-md-6 col-lg-4 p-1">
+          <div class="i float-start">
+            <i class="<%= ww.icon %>"></i>
+          </div>
+          <div class="i- float-start">
+            <h5><%= ww.heading %></h5>
+            <p><%= ww.text %></p>
+            <a href="<%= ww.link %>" class="text-decoration-none link"><%= ww.link_text %></a>  
+          </div>
+        </div>
+        <% }) %>
+        <% } else { %>
+          <p class="text-center">No items found.</p>
+        <% } %>
+      </div>
+    </div>
+  </section>
+  <!-- Our Work -->
+
+  <!-- CEO -->
+  <section id="ceo">
+    <div class="container p-3 mt-4">
+      <div class="row align-items-center justify-content-center p-1">
+        <h2 class="text-center mt-1">Welcome Message from The Principal</h2>
+        <div class="col">
+          <p class="text-bold">
+            <figure>
+              <img src="images/pexels-rodnae-productions-7841782.jpg" alt="Man Wearing Blue Suit and Eyeglasses" class="img-fluid float-end ms-1">
+              <!-- <figcaption class="text-center p-2">Mr. Edward Banks</figcaption> -->
+            </figure>
+            Lorem ipsum dolor sit amet. <br>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis aperiam, libero iste ullam, reiciendis magni nihil exercitationem impedit minima dicta tempora quisquam corrupti sequi, nobis nesciunt pariatur? Debitis, aliquam inventore aut, deleniti necessitatibus reprehenderit odit quo dicta illo unde possimus perferendis rem dolor explicabo consequatur corrupti minima eum provident repudiandae autem aliquid. Dolore deserunt, dignissimos eveniet porro minus ad mollitia. <br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium sequi suscipit placeat id iusto minus, obcaecati minima rerum fuga recusandae quisquam ex eum officiis dicta? Corrupti ipsum consequuntur, sint a earum mollitia, animi doloremque totam nobis odio obcaecati, dolorum quis illum minima labore fugit voluptatem nulla temporibus ex officia vitae? Unde dolorem iure veritatis! Explicabo facilis quos officia pariatur maiores error quod veritatis? Esse, obcaecati distinctio? Voluptatibus mollitia autem rerum nostrum quasi officiis animi explicabo. Accusantium voluptates illum voluptatibus ducimus.
+            <a href="#">[Read More]</a></p>
+        </div>
+      </div>  
+    </div>
+  </section>
+  <!-- CEO -->
+
+ <!-- Solution -->
+  <section id="solution">
+    <h3 class="p-3 m-0 text-center" style="background-color: rgb(247, 245, 245);">View all solutions & services</h3>
+    <div class="container-fluid">
+      <div class="solution align-items-center justify-content-center row p-1 text-center bg-dark">
+        <div class="col-sm-6 col-md-2 p-3">
+          <a href="#" class="text-decoration-none">All</a>
+        </div>
+        <div class="col-sm-6 col-md-2 p-3">
+          <a href="#" class="text-decoration-none">IT Infrastructure</a>
+        </div>
+        <div class="col-sm-3 col-md-3 p-3">
+          <a href="#" class="text-decoration-none">IT Service & Solutions</a>
+        </div>
+        <div class="col-sm-3 col-md-2 p-3">
+          <a href="#" class="text-decoration-none">Security</a>
+        </div>
+        <div class="col-sm-3 col-md-2 p-3">
+          <a href="#" class="text-decoration-none">Training</a>
+        </div>
+      </div>
+    </div>  
+  </section>
+  <!-- Solution -->
+
+   <!-- Solution- -->
+  <section id="solution-">
+    <div class="container-fluid p-0">
+      <div class="row g-0">
+          <div class="sol col-md-6 col-sm-6 col-lg-3">
+            <img src="images/pexels-pixabay-207756.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="sol col-md-6 col-sm-6 col-lg-3">
+            <img src="images/pexels-johny-rebel-the-explorer-panda-357271.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="sol col-md-6 col-sm-6 col-lg-3">
+            <img src="images/pexels-pixabay-256273.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="sol col-md-6 col-sm-6 col-lg-3">
+            <img src="images/pexels-abby-chung-1106466.jpg" class="img-fluid" alt="">
+          </div>
+      </div>
+      <div class="row g-0">
+        <div class="sol col-sm-6 col-md-6 col-lg-3">
+            <img src="images/pexels-pixabay-261579.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="sol col-sm-6 col-md-6 col-lg-3">
+            <img src="images/pexels-pixabay-356065.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="sol col-sm-6 col-md-6 col-lg-3">
+            <img src="images/pexels-pixabay-37539.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="sol col-sm-6 col-md-6 col-lg-3">
+            <img src="images/pexels-pixabay-207756.jpg" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solution- -->
+  <!-- Brand  -->
+  <section id="brand">
+    <h3 class="text-center p-3 display-4 mt-5">Our Brand</h3>
+    <!-- <div class="container-fluid"> -->
+      <div class="row g-0 overflow-hidden">
+        <div class="col-md-6">
+          <div class="d-flex flex-column">
+            <div class="p-2" style="background-color: rgba(6, 40, 70, 0.836); color: rgba(255, 255, 255, 0.918);">
+              <div class="i_ float-start text-center mt-5">
+                <i class="i__ fa-solid fa-trophy fa-3x"></i>
+              </div>  
+                <h2 class="p-0">Our Vision</h2>
+                <p class="i- float-start">
+                  Our Purpose is to provide quality International Educational
+                   Opportunities for learners between the ages of 1 and 18.
+                    Every child matters at the British International School,
+                     Ghana. We want our children to grow and develop into well
+                      integrated citizens prepared to overcome the challenges of
+                       daily and future life.
+                </p>
+            </div>
+            <div class="p-3" style="background-color: rgba(6, 40, 70, 0.880); color: rgba(255, 255, 255, 0.918);">
+              <div class="i_ float-start text-center mt-5">
+                <i class="i__ fa-solid fa-building-columns fa-3x"></i>
+              </div>  
+                <h2 class="p-0">Our Vision</h2>
+                <p class="i- float-start fs-6">
+                  Here at Helix we value People, Honesty and Truthfulness,
+                   Tolerance and Diversity, Creativity, Determination and Self
+                    Reliance.
+                </p>
+            </div>
+            <div class="p-2" style="background-color: rgba(6, 40, 70, 0.924); color: rgba(255, 255, 255, 0.918);">
+              <div class="i_ float-start text-center mt-5">
+                <i class="i__ fa-solid fa-key fa-3x"></i>
+              </div>
+                <h2 class="p-0">Our Mission</h2>
+                <p class="i- float-start fs-6">
+                  We are committed to our mission of extending access
+                   of high-quality Education to people living in Ghana and across
+                    the globe. The curricula and qualifications we offer are
+                     designed to develop successful students as lifelong
+                      learners and ensure that all students graduate equipped
+                       with the skills to navigate their chosen paths successfully.
+                </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6" style="height: 580px;">
+          <img src="images/pexels-agung-pandit-wiguna-1550699.jpg" class="img-fluid" alt="">
+        </div>
+      </div>
+      <!-- </div> -->
+  </section>
+  <!-- Brand -->
+
+  <!-- Blog -->
+  <section id="blog">
+    <div class="container">
+      <div class="row text-center p-1 ma">
+        <div class="col-sm-12">
+          <p class="lead">Find out how we make a difference. Read the Helix Blog.</p>
+        </div>
+        <div class="col-sm-12">
+          <button type="button" class="col-sm-12 but btn btn-dark border-1 btn-lg">Read more</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Blog -->
+
+  <!-- Testimonial -->
+  <section id="testimonial">
+    <div class="container-fluid mt-5 p-3">
+      <div id="carouselExampleDark" class="carousel carousel-dark slide p-1" data-bs-ride="carousel">
+        <h3 class="display-5 text-center">What our Clients Say</h3>
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <p class="text-center p-5 d-block w-100 fs-4" style="height: 290px; font-weight: 5px;">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis mollitia aut possimus vel corporis hic, provident recusandae laudantium pariatur obcaecati.
+            </p>
+            <div class="carousel-caption d-none d-md-block">
+              <h5 style="font-weight: 10px;">-George D. Washington, Chancellor Unid Operations, Iraq.</h5>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <p class="text-center p-5 d-block w-100 fs-4" style="height: 290px; font-weight: 5px;">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis mollitia aut possimus vel corporis hic, provident recusandae laudantium pariatur obcaecati.
+            </p>
+            <div class="carousel-caption d-none d-md-block">
+              <h5 style="font-weight: 10px;">-George Walker, Head of Resources Glassgow.</h5>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>  
+  </section>
+  <!-- Testimonial -->
+ <section id="our-st">
+    <div class="container-fluid mt-5" style="color: white;">
+      <div class="row p-5 mt-5">
+        <div class="col-md-12 text-center">
+          <h2 class="display-4">Our work</h2>
+        </div>
+        <!-- Button trigger modal -->
+        <div class="col-md-12 text-center">
+          <button type="button" name="button" class="btn" data-bs-toggle="modal" data-bs-target="#firstModal">
+            <i class="fa-solid fa-play fa-6x"></i>
+          </button>
+         </div>
+       </div>
+    </div>
+   </section>
+ <!-- firstModal -->
+  <div class="modal fade" id="firstModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="close" >
+            <span aria-hidden="true">&timesbar;</span>
+            <iframe src="videos/pexels-ivan-samkov-5676138.mp4" width="100%" height="400" alt="Students Talking to Each Other" frameborder="0"></iframe>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- firstModal -->
+ <div class="container">
+  </div>
+  
+  <footer id="footer">  
+    <%- include('partials/footer'); %>
+  </footer> 
+    <%- include('../../public/js/script'); %>
+    <script src="/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+/* General changes */
+html {
+    scroll-behavior: smooth;
+    
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f0f0f5;
+
+}
+/* nav */
+.navbar {
+    padding-top: 20px;
+}
+
+.navbar-nav {
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 30px;
+}
+
+.nav1 {
+    color: white !important;
+}
+
+#nav-link-active .nav-active {
+    color: white !important;
+    padding-inline: 0px;
+}
+
+.nav1-a {
+    color: rgba(255, 255, 255, 0.699) !important;
+}
+
+.nav1-a:hover {
+    color: rgb(255, 255, 255) !important;
+}
+
+#nav1-link-active {
+    color:rgb(253, 253, 253) !important; 
+    padding-inline: 0px;
+}
+
+#nav-link-active {
+    color: #062846d5; 
+    padding-inline: 0px;
+    border-bottom: 2px solid rgba(6, 40, 70, 0.836);
+}
+/* nav */
+
+/* We are */
+#we {
+    background-color: rgb(63, 80, 80);
+    height: 350px;
+    color: white;
+}
+
+.hImage{
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 15px;
+    z-index: 100;
+    
+}
+
+.h{
+    position: relative;
+    margin-top: 60px;
+    z-index: 50;
+    margin-left: -40px;
+    color: white;
+    background-color: rgb(83, 95, 95);
+    width: 480px;
+    height: 460px;
+
+}
+/* We are  */
+
+/* teachers */
+#teachers {
+    margin-top: 350px;
+}
+
+#teachers .p {
+    color: gray;
+}
+/* teachers */
+
+/* choice */
+#choice .col .card {
+    width: 33rem;
+}
+#as {
+    height: 300px;
+}
+
+#choice {
+    clear: both;
+}
+
+#choice .i {
+    width: 16%;
+}
+
+#choice .i- {
+    font-size: -2px;
+    width: 72%;
+}
+
+#choice .we {
+    box-sizing: border-box;
+    border-radius: 20px 20xp 20px 20px;
+}
+/* choice */
+
+/* cta  */
+#cta {
+    background-color: rgba(2, 0, 0, 0.801);
+    color: #f5f1f1;
+}
+
+#cta .btn {
+    color: #f5f1f1;
+    background-color: rgb(71, 187, 255);
+}
+/* cta  */
+
+/* footer */
+.foot1 {
+    color: rgba(255, 255, 255, 0.473);
+}
+
+.foot1 h3 {
+    color: white;
+}
+
+.foot1 p {
+    font-size: 0.9em;
+}
+
+.foot2 {
+    color: rgba(255, 255, 255, 0.473);
+    background-color: rgba(0, 0, 0, 0.89);
+}
+
+.foot-img {
+    height: 30px;
+    width: 30px;
+}
+/* footer */
+
+@media screen and (max-width: 1200px) {
+    
+}
+@media screen and (max-width: 992px) {
+    
+}
+@media screen and (max-width: 768px) {
+    header {
+        background-size: 768px 100vh;
+    }
+    
+}
+@media screen and (max-width: 576px) {
+    .h{
+        height: auto;
+        width: auto;
+        padding: 1px;
+        z-index: 0;
+        margin-top: 190px;
+        margin-left: 0px;
+        color: white;
+        background-color: rgb(74, 107, 107);
+    
+    }
+
+    .hImage img {
+        height: 200px;
+        margin-left: 2px;
+        margin-top: -80px;
+        position: relative;
+    }
+
+    .teach {
+        margin-top: 600px;
+    }
+}

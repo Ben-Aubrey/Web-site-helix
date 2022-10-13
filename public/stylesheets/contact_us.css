@@ -1,0 +1,102 @@
+/* General changes */
+
+html {
+    scroll-behavior: smooth;
+    
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* nav */
+.navbar {
+    padding-top: 20px;
+}
+
+.navbar-nav {
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 30px;
+}
+
+.nav1 {
+    color: white !important;
+}
+
+#nav-link-active .nav-active {
+    color: white !important;
+}
+
+.nav1-a {
+    color: rgba(255, 255, 255, 0.699) !important;
+}
+
+.nav1-a:hover {
+    color: rgb(255, 255, 255) !important;
+}
+
+#nav1-link-active {
+    color:rgb(253, 253, 253) !important; 
+}
+
+#nav-link-active {
+    color: #062846d5; 
+    border-bottom: 2px solid rgba(6, 40, 70, 0.836);
+}
+/* nav */
+
+/* cta  */
+#cta {
+    background-color: rgba(2, 0, 0, 0.801);
+    color: #f5f1f1;
+}
+
+#cta .btn {
+    color: #f5f1f1;
+    background-color: rgb(71, 187, 255);
+}
+/* cta  */
+
+/* footer */
+.foot1 {
+    color: rgba(255, 255, 255, 0.473);
+}
+
+.foot1 h3 {
+    color: white;
+}
+
+.foot1 p {
+    font-size: 0.9em;
+}
+
+.foot2 {
+    color: rgba(255, 255, 255, 0.473);
+    background-color: rgba(0, 0, 0, 0.89);
+}
+
+.foot-img {
+    height: 30px;
+    width: 30px;
+}
+/* footer */
+
+@media screen and (max-width: 1200px) {
+    
+
+}
+@media screen and (max-width: 992px) {
+    
+    
+}
+@media screen and (max-width: 768px) {
+    
+    
+}
+@media screen and (max-width: 576px) {
+   
+}

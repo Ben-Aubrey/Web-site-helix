@@ -1,0 +1,250 @@
+/* General changes */
+
+html {
+    scroll-behavior: smooth;
+    
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: rgb(247, 245, 245);
+
+}
+
+/* header */
+header {
+    height: 100vh;
+    background-image: url('/images/pexels-armin-rimoldi-5554289.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* nav */
+.navbar {
+    padding-top: 20px;
+}
+
+.navbar-nav {
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 30px;
+}
+
+.nav1 {
+    color: white !important;
+}
+
+#nav-link-active .nav-active {
+    color: white !important;
+    padding-inline: 0px;
+}
+
+.nav1-a {
+    color: rgba(255, 255, 255, 0.596) !important;
+}
+
+.nav1-a:hover {
+    color: rgb(255, 255, 255) !important;
+}
+
+#nav1-link-active {
+    color:rgb(253, 253, 253) !important; 
+    padding-inline: 0px;
+}
+
+#nav-link-active {
+    color: #062846d5; 
+    padding-inline: 0px;
+    border-bottom: 2px solid rgba(6, 40, 70, 0.836);
+}
+/* nav */
+
+/* intro */
+header .intro {
+    color: #ffffff;
+    margin-top: 130px;
+    margin-left: 20px;
+}
+
+header .intro div {
+    color: #ffffff;
+    /* margin-top: 123px; */
+}
+
+.but {
+    height: 50px;
+    width: 150px;
+}
+/* intro */
+/* header */
+
+/* our work */
+#our-work {
+    background-color: #ffffff;
+}
+/* our work */
+.col-md-4 {
+    height: 270px;
+    width: 30%;
+}
+
+.i {
+    width: 28%;
+}
+
+.i- {
+    font-size: -2px;
+    width: 72%;
+}
+
+.i- p {
+    font-size: medium;
+}
+
+.link {
+    color: black;
+    font-weight: 100;
+}
+
+.link:hover {
+    color: black;
+}
+/* our work  */
+
+/* ceo */
+#ceo img {
+    height: 330px;
+}
+/* ceo */
+
+/* solution */
+.solution a {
+    padding-inline: 20px;
+    color: #ffffff;
+    font-size: 1.1em;
+}
+
+.solution a:hover {
+    color: yellow;
+}
+/* solution */
+
+/* solution- */
+.sol {
+    background-color: black;
+}
+
+/* solution- */
+
+/* button  */
+.position-sticky {
+    height: 90px;
+    width: 90px;
+}
+
+.button-u {
+    height: 100%;
+}
+/* button  */
+
+/* brand */
+.i_ {
+    width: 22%;
+}
+
+.i__:hover {
+    color: rgba(4, 22, 37, 0.836);
+}
+
+.brand-img {
+    height: 100%;
+}
+
+.brand-img:hover {
+    color:  rgba(6, 40, 70, 0.836);
+}
+
+.brand .fs-6 {
+    font-size: 0.7em;
+}
+/* brand */
+
+/* our-st  */
+#our-st {
+    background-image: url('../../images/pexels-ketut-subiyanto-4132406.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+}
+/* our-st  */
+
+/* footer */
+.foot1 {
+    color: rgba(255, 255, 255, 0.473);
+}
+
+.foot1 h3 {
+    color: white;
+}
+
+.foot1 p {
+    font-size: 0.9em;
+}
+
+.foot2 {
+    color: rgba(255, 255, 255, 0.473);
+    background-color: rgba(0, 0, 0, 0.89);
+}
+
+.foot-img {
+    height: 30px;
+    width: 30px;
+}
+/* footer */
+
+@media screen and (max-width: 1200px) {
+    #blog .ma {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    
+    
+}
+
+@media screen and (max-width: 768px) {
+    
+    
+}
+
+@media screen and (max-width: 576px) {
+    /* #our-work .container {
+        padding: 1px;
+        
+    } */
+    
+    #ceo .col img {
+        height: 260px;
+    }
+    
+    header {
+        /* height: auto; */
+        box-sizing: content-box;
+        
+    }
+
+    header .intro {
+        color: #ffffff;
+        width: 320px;
+        margin-top: 130px;
+        margin-left: 20px;
+    }
+}

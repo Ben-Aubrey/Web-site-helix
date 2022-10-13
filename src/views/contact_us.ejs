@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head'); %>
+    <!-- Css -->
+    <link rel="stylesheet" href="/stylesheets/contact_us.css">
+</head>
+<body>
+  <!-- Header -->
+  <Header id="header">
+    <%- include('partials/header'); %>
+  </Header>
+  <!-- Header -->
+
+  <!-- Contact  -->
+  <section id="contact">
+    <div class="container p-5 text-center">
+      <div class="row">
+        <div class="col">
+          <h4>CONTACT</h4>
+          <h2>Contact for any Query</h2>
+          <div class="">
+            <form name="sentMessage" id="contactForm"  action="" method="post">
+              <div class="mb-3">
+                <input type="text" class="form-control" name="text" id="name" placeholder="Your name" required="required" data-validation-required-message="Please enter your name">
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your email" required="required" data-validation-required-message="Please enter your email">
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject">
+              </div>
+              <div class="mb-3">
+                <textarea name="message" class="form-control" id="message" cols="30" rows="10" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" id="sendMessageButton">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact  -->
+ <!-- CTA -->
+  <section id="cta">
+    <div class="container-fluid">
+      <div class="row text-center p-3">
+        <div class="col-md-12">
+          <h2 class="" data-animate-effect="fadeInRight">Get your admission now!</h2>
+          <a href="#" role="button" class="btn btn-light btn-lg" data-animate-effect="fadeInLeft">Enroll</a>
+        </div>
+      </div>
+    </div>
+  </section>  
+  <!-- CTA -->
+      
+  <!-- footer  -->
+  <footer id="footer">  
+      <%- include('partials/footer'); %>
+  </footer> 
+    <%- include('../../public/js/script'); %>
+    <script src="/js/script.js"></script>
+ <!-- footer -->
+  <!-- back to top
+   <div class="position-sticky bottom-0 end-0 border border-2 rounded circle">
+    <a href="#header">
+      <button type="button" name="button" class="button-u">
+        <i class="fa-solid fa-arrow-up fa-2x"></i>
+        
+      </button>
+   </a>
+  </div>
+  back to top -->
+
+  </body>
+</html>
